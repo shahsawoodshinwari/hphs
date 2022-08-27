@@ -62,78 +62,6 @@
                 <img src="images/class-climate-teacher-K-5-1024x580.jpg" alt="school image" class="img-fluid">
             </div>
         </div>
-        <div class="container my-3">
-            <div class="row g-4">
-                <h2 class="text-center">Latest NEWS</h2>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100 border shadow" style="--bs-border-color: var(--bs-orange)!important;">
-                        <img src="images/science-lab-chemicals.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Science Lab</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Chemicals</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100 border shadow" style="--bs-border-color: var(--bs-orange)!important;">
-                        <img src="images/istockphoto-1339040567-170667a.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Classroom</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Questionaire</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Join</a>
-                            <a href="#" class="card-link">Visit All Classrooms</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card h-100 border shadow" style="--bs-border-color: var(--bs-orange)!important;">
-                        <img src="images/images.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">National Study Tour</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Lahore</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card h-100 border shadow" style="--bs-border-color: var(--bs-orange)!important;">
-                        <div class="row g-0">
-                            <div class="col-md-5">
-                                <img src="images/class-climate-teacher-K-5-1024x580.jpg" class="img-fluid rounded-md-start" alt="...">
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card h-100 border shadow" style="--bs-border-color: var(--bs-orange)!important;">
-                        <div class="row g-0">
-                            <div class="col-md-7">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <img src="images/class-climate-teacher-K-5-1024x580.jpg" class="img-fluid rounded-md-end" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <footer style="background-color: var(--bs-orange);" class="px-3 py-5">
         <div class="container">
@@ -221,13 +149,23 @@
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
     <script>
-    function setCoverHeight(cover) {
-        document.querySelector(cover).setAttribute('style', `height: ${window.innerHeight - 79}px!important`);
+    function setCoverHeight(selector) {
+        const screen_height = window.innerHeight;
+        const nav = document.querySelector('nav');
+        const navbar_height = nav.offsetHeight;
+        const cover_height = screen_height - navbar_height;
+        const cover = document.querySelector(selector);
+        cover.setAttribute('style', `height:${cover_height}px !important`);
+        return cover;
     }
+
+    setCoverHeight('#cover');
+    window.addEventListener('resize', function () {setCoverHeight('#cover');});
     </script>
     <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
