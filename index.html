@@ -56,7 +56,7 @@
     <div class="container-fluid p-0">
         <div class="row bg-secondary g-0 align-items-center shadow" id="cover">
             <div class="col-12">
-                <img src="images/class-climate-teacher-K-5-1024x580.jpg" alt="school image" class="img-fluid">
+                <img src="images/school.jpg" alt="school image">
             </div>
         </div>
     </div>
@@ -157,7 +157,7 @@
         const navbar_height = nav.offsetHeight;
         const cover_height = screen_height - navbar_height;
         const cover = document.querySelector(selector);
-        cover.setAttribute('style', `height:${cover_height}px !important`);
+        cover.setAttribute('style', `height:${cover_height}px !important; width:100% !important;`);
         return cover;
     }
 
