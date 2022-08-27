@@ -54,43 +54,13 @@
         </div>
     </nav>
     <div class="container-fluid p-0">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="row bg-secondary g-0 align-items-center shadow" id="cover">
+            <div class="col-12 col-md-6 text-white text-center">
+                <div class="display-6 p-5 p-md-0">Your <span style="color: var(--bs-orange);">child's Potential</span> is Our Passion.</div>
             </div>
-            <div class="carousel-inner" style="height:89vh!important;">
-                <div class="carousel-item active">
-                    <img src="images/1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/4.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/5.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
+            <div class="col-12 col-md-6">
+                <img src="images/class-climate-teacher-K-5-1024x580.jpg" alt="school image" class="img-fluid">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
         <div class="container my-3">
             <div class="row g-4">
@@ -239,9 +209,10 @@
     <script src="javascript/bootstrap.bundle.min.js"></script>
     <script src="javascript/popper.min.js"></script>
     <script>
-    window.addEventListener('resize', function() {
-        document.querySelector('.carousel-inner').setAttribute('style', `height: ${window.innerHeight - 79}px!important`);
-    });
+
+    function setCoverHeight(cover) {
+        document.querySelector(cover).setAttribute('style', `height: ${window.innerHeight - 79}px!important`);
+    }
     </script>
     <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
