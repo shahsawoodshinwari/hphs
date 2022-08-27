@@ -55,10 +55,7 @@
     </nav>
     <div class="container-fluid p-0">
         <div class="row bg-secondary g-0 align-items-center shadow" id="cover">
-            <div class="col-12 col-md-6 text-white text-center">
-                <div class="display-6 p-5 p-md-0">Your <span style="color: var(--bs-orange);">child's Potential</span> is Our Passion.</div>
-            </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12">
                 <img src="images/class-climate-teacher-K-5-1024x580.jpg" alt="school image" class="img-fluid">
             </div>
         </div>
@@ -164,8 +161,8 @@
         return cover;
     }
 
-    setCoverHeight('#cover');
-    window.addEventListener('resize', function () {setCoverHeight('#cover');});
+    setCoverHeight('#cover img');
+    window.addEventListener('resize', function () {setCoverHeight('#cover img');});
     </script>
     <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
