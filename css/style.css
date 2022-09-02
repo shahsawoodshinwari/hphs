@@ -4,14 +4,17 @@
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
 }
+
 .card:hover {
     transform: scale(1.02);
 }
+
 body {
-    background-image: url('../images/back-logo.png')!important;
+    background-image: url('../images/back-logo.png') !important;
     background-attachment: fixed !important;
     background-blend-mode: overlay;
 }
+
 textarea[name="comments"] {
     resize: none;
 }
