@@ -1,6 +1,9 @@
 # Hamza Public School
 An icon of quality education
-![](images/school.jpg)
+![Hamza School Image](images/school.jpg)
+
+## Address
+Gagra Road, Landi Kotal, Khyber Agency, Khyber Pakhtunkhwa, Pakistan
 
 ### Contact us:
 * [phone](+923028171873)
