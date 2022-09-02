@@ -2,9 +2,9 @@
 An icon of quality education
 ![](images/school.jpg)
 
-### Contact:
-* [phone](03460149720)
-* [whatsapp](https://wa.me/923460149720)
+### Contact us:
+* [phone](+923028171873)
+* [whatsapp](https://wa.me/923028171873)
 * [facebook](https://hamzapublichighschool)
 * [messenger](https://m.me/hamzapublichighschool)
-* [address]()
+* [address](https://goo.gl/maps/SDPeHyfVoLfdwp2F6)
