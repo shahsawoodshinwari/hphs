@@ -1,3 +1,7 @@
+/* overwrite bootstrap focus on button */
+button:focus {
+    box-shadow: none !important;
+}
 .card {
     transition-property: all;
     transition-duration: 0.25s;
@@ -17,4 +21,77 @@ body {
 
 textarea[name="comments"] {
     resize: none;
+}
+
+@media (min-width: 768px) {
+    .rounded-md-start {
+        border-top-left-radius: var(--bs-card-inner-border-radius) !important;
+        border-bottom-left-radius: var(--bs-card-inner-border-radius) !important;
+    }
+
+    .rounded-md-top {
+        border-top-left-radius: var(--bs-card-inner-border-radius) !important;
+        border-top-right-radius: var(--bs-card-inner-border-radius) !important;
+    }
+
+    .rounded-md-end {
+        border-top-right-radius: var(--bs-card-inner-border-radius) !important;
+        border-bottom-right-radius: var(--bs-card-inner-border-radius) !important;
+    }
+
+    .rounded-md-bottom {
+        border-bottom-left-radius: var(--bs-card-inner-border-radius) !important;
+        border-bottom-right-radius: var(--bs-card-inner-border-radius) !important;
+    }
+
+    .rounded-md-top-right {
+        border-top-right-radius: var(--bs-card-inner-border-radius) !important;
+    }
+
+    .rounded-md-top-left {
+        border-bottom-right-radius: var(--bs-card-inner-border-radius) !important;
+    }
+
+    .rounded-md-bottom-right {
+        border-bottom-right-radius: var(--bs-card-inner-border-radius) !important;
+    }
+
+    .rounded-md-bottom-left {
+        border-bottom-left-radius: var(--bs-card-inner-border-radius) !important;
+    }
+
+    .rounded-md-top-right-0 {
+        border-top-right-radius: 0 !important;
+    }
+
+    .rounded-md-top-left-0 {
+        border-bottom-right-radius: 0 !important;
+    }
+
+    .rounded-md-bottom-right-0 {
+        border-bottom-right-radius: 0 !important;
+    }
+
+    .rounded-md-bottom-left-0 {
+        border-bottom-left-radius: 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .rounded-top-right-0 {
+        border-top-right-radius: 0 !important;
+    }
+
+    .rounded-top-left-0 {
+        border-bottom-right-radius: 0 !important;
+    }
+
+    .rounded-bottom-right-0 {
+        border-bottom-right-radius: 0 !important;
+    }
+
+    .rounded-bottom-left-0 {
+        border-bottom-left-radius: 0 !important;
+    }
+
 }
