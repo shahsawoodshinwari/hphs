@@ -1,0 +1,40 @@
+:root {
+    --bs-img-opacity: 1;
+}
+
+.card img {
+    opacity: var(--bs-img-opacity);
+    transform: ;
+}
+
+.card img:hover {
+    --bs-img-opacity: 0.5;
+}
+
+.card {
+    transition-property: all;
+    transition-duration: 0.20s;
+    transition-timing-function: ease-in-out;
+}
+
+.card:hover:not(footer .card) {
+    transform: translate(-2px, -2px);
+}
+
+a[href="index.html"].text-decoration-none.text-dark {
+    animation-name: view;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes view {
+    from {
+        opacity: .2
+    }
+    to {
+        opacity: 1
+    }
+}
