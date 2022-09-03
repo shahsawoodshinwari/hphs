@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg sticky-top shadow" style="background-color: var(--bs-orange);">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="logo" class="rounded-circl" height="50">
+                <img src="images/logo.png" alt="logo" class="rounded-circle" width="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <svg xmlns="http://www.w3.org/2000/svg" height="25" height="25" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
@@ -25,7 +25,7 @@
                 <a href="index.html" class="text-decoration-none text-dark">Hamza Public High School</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -36,7 +36,7 @@
                         <a class="nav-link" href="alumni.html">Alumni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="admission.html">Admissions</a>
+                        <a class="nav-link active text-white" aria-current="page" href="admission.html">Admissions</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="events.html">Events</a>
@@ -47,96 +47,111 @@
                         </a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark btn-sm" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
     <div class="container-fluid my-5" style="min-height: 62.3vh!important">
         <div class="container">
-            <div class="row rounded shadow p-3">
+            <div class="row">
                 <div class="col-12">
-                    <h3 class="text-center">Addmission Form</h3>
-                    <form action="" method="post" class="row g-3 needs-validation" novalidate>
-                        <div class="col-12 col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="first_name" required name="first_name" placeholder="name@example.com">
-                                <label for="first_name">First name</label>
+                    <div class="card">
+                        <div class="card-header" id="myTab" role="tablist">
+                            <div class="btn-group w-100">
+                                <button class="btn btn-success active" id="home-tab" data-bs-toggle="tab" data-bs-target="#apply-online-tab-pane" type="button" role="tab" aria-controls="apply-online-tab-pane" aria-selected="true">Apply Online</button>
+                                <button class="btn btn-primary" onclick="print();" id="download-pdf-tab" data-bs-toggle="tab" data-bs-target="#download-pdf-tab-pane" type="button" role="tab" aria-controls="download-pdf-tab-pane" aria-selected="false">Download PDF</button>
+                                <button class="btn btn-warning" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Print Form</button>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="last_name" required name="last_name" placeholder="name@example.com">
-                                <label for="last_name">Last name</label>
+                        <div class="card-body" id="myTabContent">
+                            <div class="tab-pane fade show" id="apply-online-tab-pane" role="tabpanel" aria-labelledby="apply-online-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3 class="text-center">Addmission Form</h3>
+                                        <form action="" method="post" class="row g-3 needs-validation" novalidate>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="first_name" required name="first_name" placeholder="name@example.com">
+                                                    <label for="first_name">First name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="last_name" required name="last_name" placeholder="name@example.com">
+                                                    <label for="last_name">Last name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="father_name" required name="father_name" placeholder="name@example.com">
+                                                    <label for="father_name">Father name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="grade" required aria-label="Floating label class select" name="grade">
+                                                        <option value="">Select your current class</option>
+                                                        <option value="1">Prep</option>
+                                                        <option value="2">K.G</option>
+                                                        <option value="3">1st</option>
+                                                        <option value="2">2nd</option>
+                                                        <option value="3">3rd</option>
+                                                        <option value="4">4th</option>
+                                                        <option value="5">5th</option>
+                                                        <option value="6">6th</option>
+                                                        <option value="7">7th</option>
+                                                        <option value="8">8th</option>
+                                                        <option value="9">9th</option>
+                                                        <option value="10">10th</option>
+                                                    </select>
+                                                    <label for="grade">Current class</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="grade" aria-label="Floating label class select" required name="grade">
+                                                        <option value="">Select your class to admit in</option>
+                                                        <option value="1">Prep</option>
+                                                        <option value="2">K.G</option>
+                                                        <option value="3">1st</option>
+                                                        <option value="2">2nd</option>
+                                                        <option value="3">3rd</option>
+                                                        <option value="4">4th</option>
+                                                        <option value="5">5th</option>
+                                                        <option value="6">6th</option>
+                                                        <option value="7">7th</option>
+                                                        <option value="8">8th</option>
+                                                        <option value="9">9th</option>
+                                                        <option value="10">10th</option>
+                                                    </select>
+                                                    <label for="grade">Admiting class</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="gender" aria-label="Floating label class select" required name="gender">
+                                                        <option value="">Select your gender</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+                                                    </select>
+                                                    <label for="gender">Gender</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <button class="btn btn-success btn-sm">
+                                                    Submit Application
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                                        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="tab-pane fade" id="download-pdf-tab-pane" role="tabpanel" aria-labelledby="download-pdf-tab" tabindex="0">2</div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">3</div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="father_name" required name="father_name" placeholder="name@example.com">
-                                <label for="father_name">Father name</label>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="grade" required aria-label="Floating label class select" name="grade">
-                                    <option value="">Select your current class</option>
-                                    <option value="1">Prep</option>
-                                    <option value="2">K.G</option>
-                                    <option value="3">1st</option>
-                                    <option value="2">2nd</option>
-                                    <option value="3">3rd</option>
-                                    <option value="4">4th</option>
-                                    <option value="5">5th</option>
-                                    <option value="6">6th</option>
-                                    <option value="7">7th</option>
-                                    <option value="8">8th</option>
-                                    <option value="9">9th</option>
-                                    <option value="10">10th</option>
-                                </select>
-                                <label for="grade">Current class</label>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="grade" aria-label="Floating label class select" required name="grade">
-                                    <option value="">Select your class to admit in</option>
-                                    <option value="1">Prep</option>
-                                    <option value="2">K.G</option>
-                                    <option value="3">1st</option>
-                                    <option value="2">2nd</option>
-                                    <option value="3">3rd</option>
-                                    <option value="4">4th</option>
-                                    <option value="5">5th</option>
-                                    <option value="6">6th</option>
-                                    <option value="7">7th</option>
-                                    <option value="8">8th</option>
-                                    <option value="9">9th</option>
-                                    <option value="10">10th</option>
-                                </select>
-                                <label for="grade">Admiting class</label>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="gender" aria-label="Floating label class select" required name="gender">
-                                    <option value="">Select your gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
-                                <label for="gender">Gender</label>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-success btn-sm">
-                                Submit Application
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 :root {
     --bs-bg-opacity: 1;
 }
+
 /* overwrite bootstrap focus on button */
 button:focus {
     box-shadow: none !important;
