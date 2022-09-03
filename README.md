@@ -13,7 +13,7 @@ Gagra Road, Landi Kotal, Khyber Agency, Khyber Pakhtunkhwa, Pakistan
 * [address](https://goo.gl/maps/SDPeHyfVoLfdwp2F6)
 
 ### Links to 🌐
-* [Home](https://shahsawoodhamzavi.github.io/HPHS)
+* [![](./svgs/home.svg)](https://shahsawoodhamzavi.github.io/HPHS)
 * [Overview](https://shahsawoodhamzavi.github.io/HPHS/overview.html)
 * [Alumni](https://shahsawoodhamzavi.github.io/HPHS/alumni.html)
 * [Admissions](https://shahsawoodhamzavi.github.io/HPHS/admission.html)
