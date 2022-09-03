@@ -12,10 +12,10 @@ Gagra Road, Landi Kotal, Khyber Agency, Khyber Pakhtunkhwa, Pakistan
 * [messenger](https://m.me/hamzapublichighschool)
 * [address](https://goo.gl/maps/SDPeHyfVoLfdwp2F6)
 
-### Links to 🌐
-* [![](./svgs/home.svg)](https://shahsawoodhamzavi.github.io/HPHS)
-* [Overview](https://shahsawoodhamzavi.github.io/HPHS/overview.html)
-* [Alumni](https://shahsawoodhamzavi.github.io/HPHS/alumni.html)
-* [Admissions](https://shahsawoodhamzavi.github.io/HPHS/admission.html)
+### Links to ![](./svgs/globe.svg)
+* [![](./svgs/house-door.svg)](https://shahsawoodhamzavi.github.io/HPHS)
+* [![](images/overview.png)](https://shahsawoodhamzavi.github.io/HPHS/overview.html)
+* [![](./svgs/mortarboard-fill)](https://shahsawoodhamzavi.github.io/HPHS/alumni.html)
+* [![](./svgs/calender2-event.svg)](https://shahsawoodhamzavi.github.io/HPHS/admission.html)
 * [Events](https://shahsawoodhamzavi.github.io/HPHS/events.html)
 * [Results](https://shahsawoodhamzavi.github.io/HPHS/results.html)
