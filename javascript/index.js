@@ -9,12 +9,7 @@ function setCoverHeight(selector) {
     return cover;
 }
 
-document.addEventListener('DOMContentLoaded', setCoverHeight('#cover img'));
+document.addEventListener('DOMContentLoaded', () => {
+    setCoverHeight('#cover img');
+});
 window.onresize = setCoverHeight('#cover img');
-window.onscroll = () => {
-    const root = document.querySelector(':root');
-    if (window.pageYOffset > document.querySelector('nav').offsetHeight)
-        root.style.setProperty('--bs-bg-opacity', 1);
-    else
-        root.style.setProperty('--bs-bg-opacity', 0.7);
-}
