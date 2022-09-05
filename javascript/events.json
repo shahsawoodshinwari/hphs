@@ -1,0 +1,24 @@
+events = [
+    {
+        "card_header": "Annual Function 2019",
+        "images": [
+            "images/events/2019/0.jpg",
+            "images/events/2019/1.jpg",
+            "images/events/2019/2.jpg",
+            "images/events/2019/3.jpg",
+            "images/events/2019/4.jpg",
+            "images/events/2019/5.jpg",
+            "images/events/2019/6.jpg",
+            "images/events/2019/7.jpg",
+            "images/events/2019/8.jpg",
+        ]
+    },
+    {
+        "card_header": "Annual Function 2016",
+        "images": [
+            "images/events/2016/0.jpg",
+            "images/events/2016/1.jpg",
+            "images/events/2016/2.jpg",
+        ]
+    }
+];
