@@ -15,13 +15,13 @@ function create_card(title, images) {
     const row = document.createElement('div');
     row.classList.add("row", "row-cols-1", "row-cols-sm-2", "row-cols-md-3", "row-cols-lg-4", "g-1", "align-items-center");
 
-    // console.log(images)
-    images.forEach(image => {
+    console.log(images.length)
+    images.forEach((image, index) => {
         const innerCol = document.createElement('div');
-        innerCol.classList.add('col');
+        innerCol.classList.add('col')
 
         const img = document.createElement('img');
-        img.classList.add('img-fluid');
+        img.classList.add('img-fluid', 'rounded');
         img.setAttribute('src', image);
         img.setAttribute('alt', '...');
 

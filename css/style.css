@@ -43,7 +43,7 @@ textarea[name="comments"] {
     }
 
     .rounded-md-top-left {
-        border-bottom-right-radius: var(--bs-card-inner-border-radius) !important;
+        border-top-left-radius: var(--bs-card-inner-border-radius) !important;
     }
 
     .rounded-md-bottom-right {
@@ -59,7 +59,7 @@ textarea[name="comments"] {
     }
 
     .rounded-md-top-left-0 {
-        border-bottom-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
     }
 
     .rounded-md-bottom-right-0 {
@@ -77,7 +77,7 @@ textarea[name="comments"] {
     }
 
     .rounded-top-left-0 {
-        border-bottom-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
     }
 
     .rounded-bottom-right-0 {

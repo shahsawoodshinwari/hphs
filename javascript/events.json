@@ -16,9 +16,9 @@ events = [
     {
         "card_header": "Annual Function 2016",
         "images": [
-            "images/events/2016/0.jpg",
             "images/events/2016/1.jpg",
             "images/events/2016/2.jpg",
+            "images/events/2016/0.jpg",
         ]
     }
 ];
