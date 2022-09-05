@@ -47,24 +47,9 @@
     <iframe src="footer.html" frameborder="0" width="100%" scrolling="no"></iframe>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
     <script src="javascript/index.js"></script>
-    <script>
-    function setCoverHeight(selector) {
-        const screen_height = window.innerHeight;
-        const nav = document.querySelector('nav');
-        const navbar_height = nav.offsetHeight;
-        const other_height = document.querySelector('div#cover div.col-12.d-block.d-md-none').offsetHeight;
-        const cover_height = screen_height - (navbar_height + other_height);
-        const cover = document.querySelector(selector);
-        cover.setAttribute('style', `height:${cover_height}px !important; width:100% !important;`);
-        return cover;
-    }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        setCoverHeight('#cover img');
-    });
-    window.onresize = setCoverHeight('#cover img');
-    </script>
 </body>
 
 </html>
