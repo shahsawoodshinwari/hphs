@@ -1,0 +1,12 @@
+questions = [
+    {
+        "id": 1,
+        "question": "Can I admit without Entry Test?",
+        "answer": "No! You cannot take admission without an Entry Test."
+    },
+    {
+        "id": 2,
+        "question": "What marks are required for admission?",
+        "answer": "You should have taken 50% marks in your previous class."
+    }
+]
