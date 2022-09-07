@@ -8,5 +8,10 @@ questions = [
         "id": 2,
         "question": "What marks are required for admission?",
         "answer": "You should have taken 50% marks in your previous class."
+    },
+    {
+        "id": 3,
+        "question": "What type of applications are accepted?",
+        "answer": "Currently only by hand forms are accepted."
     }
 ]
