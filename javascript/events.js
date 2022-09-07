@@ -1,40 +1,11 @@
 function create_card(title, images) {
-    const col = document.createElement('div');
-    col.classList.add('col-12');
-
-    const card = document.createElement('div');
-    card.classList.add('card');
-
-    const card_header = document.createElement('div');
-    card_header.classList.add('card-header');
-    card_header.innerText = title;
-
-    const card_body = document.createElement('div');
-    card_body.classList.add('card-body');
-
-    const row = document.createElement('div');
-    row.classList.add("row", "row-cols-1", "row-cols-sm-2", "row-cols-md-3", "row-cols-lg-4", "g-1", "align-items-center");
-
+    var cols = "";
     images.forEach(image => {
-        const innerCol = document.createElement('div');
-        innerCol.classList.add('col')
-
-        const img = document.createElement('img');
-        img.classList.add('img-fluid', 'rounded');
-        img.setAttribute('src', image);
-        img.setAttribute('alt', '...');
-
-        innerCol.append(img);
-
-        row.append(innerCol);
+        cols += `<div class="col"><a href="${image}"><img class="img-fluid rounded" src="${image}" alt="..."></a></div>`;
     })
+    const card = `<div class="col-12"><div class="card"><div class="card-header">${ title }</div><div class="card-body"><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-1 align-items-center">${cols}</div></div></div></div>`
 
-    card_body.appendChild(row)
-    card.appendChild(card_header)
-    card.appendChild(card_body)
-    col.appendChild(card)
-
-    document.querySelector('#events').appendChild(col);
+    document.querySelector('#events').innerHTML += card;
 } // create card
 document.addEventListener('DOMContentLoaded', () => {
     events.forEach(obj => {
