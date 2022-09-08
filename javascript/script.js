@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
         else
             element.setAttribute('href', pages.home);
     });
+
+    const title = document.querySelector('title').textContent.toLowerCase();
+    document.querySelectorAll('nav.navbar li.nav-item a.nav-link').forEach(tab => {
+        if (title.search(tab.textContent.toLowerCase()) > 0) {
+            tab.classList.add('active', 'text-white', 'px-2');
+        }
+    });
 });
 
 function sendEmail(e) {
