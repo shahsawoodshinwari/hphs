@@ -1,0 +1,17 @@
+results = [
+    {
+        "year": 2022,
+        "classes": {
+            "Prep": {
+                "1st": "images/default.jpg",
+                "2nd": "images/default.jpg",
+                "3rd": "images/default.jpg",
+            },
+            "K.G": {
+                "1st": "images/default.jpg",
+                "2nd": "images/default.jpg",
+                "3rd": "images/default.jpg",
+            }
+        }
+    }
+]
