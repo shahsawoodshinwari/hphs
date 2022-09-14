@@ -1,6 +1,6 @@
 results = [
     {
-        "year": 2022,
+        "year": "Annual Examination 2022",
         "classes": {
             "Prep": {
                 "1st": "images/default.jpg",
