@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
         document.forms[0].addEventListener('submit', sendAdmissionForm);
     } catch (e) {
-        throw new error(e);
+        // do nothing
     }
     const parent = document.querySelector('#faqsAccordionFlush');
     questions.forEach(obj => {
