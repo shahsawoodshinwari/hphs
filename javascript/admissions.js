@@ -1,4 +1,4 @@
-function sendFeedback(e) {
+function sendAdmissionForm(e) {
     e.preventDefault();
     form = e.target;
     first_name = form.querySelector('#first_name').value;
