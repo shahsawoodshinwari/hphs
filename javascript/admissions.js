@@ -22,7 +22,7 @@ function sendAdmissionForm(e) {
         .then((data) => {
             if (data.success == true) {
                 console.log('form submit');
-                // document.querySelector('a.nav-link[href="index.html"]').click();
+                document.querySelector('a.nav-link[href="index.html"]').click();
             }
         });
 }
