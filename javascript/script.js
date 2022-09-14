@@ -9,7 +9,7 @@ pages = {
 }
 document.addEventListener('DOMContentLoaded', function() {
     try {
-        document.querySelector('footer form').addEventListener('submit', sendEmail);
+        document.querySelector('footer form').addEventListener('submit', sendFeedback);
     } catch (e) {
         // statement
     }
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function sendEmail(e) {
+function sendFeedback(e) {
     e.preventDefault();
     form = e.target;
     name = form.querySelector('[name="username"]').value;

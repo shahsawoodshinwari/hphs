@@ -61,7 +61,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid my-5" style="min-height: 62.3vh!important">
+    <div class="container-fluid my-5" style="min-height: 71.3vh!important">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -79,73 +79,109 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <h3 class="text-center">Addmission Form</h3>
-                                            <form action="mailto:zoology.fb@gmail.com" class="row g-3 needs-validation" novalidate>
+                                            <form class="row g-3 needs-validation" novalidate>
                                                 <div class="col-12 col-md-6">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" id="first_name" required name="first_name" placeholder="name@example.com">
-                                                        <label for="first_name">First name</label>
+                                                    <div class="input-group">
+                                                        <label for="first_name" class="input-group-text">First Name</label>
+                                                        <input type="text" autofocus required class="form-control" id="first_name" name="first_name" placeholder="Enter your first name">
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-6">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" id="last_name" required name="last_name" placeholder="name@example.com">
-                                                        <label for="last_name">Last name</label>
+                                                    <div class="input-group">
+                                                        <label for="last_name" class="input-group-text">Last Name</label>
+                                                        <input type="text" required name="last_name" id="last_name" placeholder="Enter your last name" class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-6">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" id="father_name" required name="father_name" placeholder="name@example.com">
-                                                        <label for="father_name">Father name</label>
+                                                    <div class="input-group">
+                                                        <label for="father_name" class="input-group-text">Father Name</label>
+                                                        <input type="text" required name="father_name" id="father_name" placeholder="Enter your father name" class="form-control">
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-6">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="grade" required aria-label="Floating label class select" name="grade">
+                                                    <div class="input-group">
+                                                        <label for="phone_number" class="input-group-text">Phone Number</label>
+                                                        <input type=text min=0 pattern="[0-9]{3}" name="phone_number" required class="form-control" placeholder="Enter phone number here" id="phone_number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="input-group">
+                                                        <label for="email" class="input-group-text">Email address</label>
+                                                        <input type="email" required name="email" id="email" placeholder="Enter email address here" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="input-group">
+                                                        <label for=date_of_birth class="input-group-text">Date of Birth</label>
+                                                        <input type=date required name=date_of_birth id=date_of_birth class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="input-group">
+                                                        <label for="current_class" class="input-group-text">Current Class</label>
+                                                        <select required name=current_class id=current_class class="form-select">
                                                             <option value="">Select your current class</option>
-                                                            <option value="1">Prep</option>
-                                                            <option value="2">K.G</option>
-                                                            <option value="3">1st</option>
-                                                            <option value="2">2nd</option>
-                                                            <option value="3">3rd</option>
-                                                            <option value="4">4th</option>
-                                                            <option value="5">5th</option>
-                                                            <option value="6">6th</option>
-                                                            <option value="7">7th</option>
-                                                            <option value="8">8th</option>
-                                                            <option value="9">9th</option>
-                                                            <option value="10">10th</option>
+                                                            <option value="Prep">Prep</option>
+                                                            <option value="K.G">K.G</option>
+                                                            <option value="1st">1st</option>
+                                                            <option value="2nd">2nd</option>
+                                                            <option value="3rd">3rd</option>
+                                                            <option value="4th">4th</option>
+                                                            <option value="5th">5th</option>
+                                                            <option value="6th">6th</option>
+                                                            <option value="7th">7th</option>
+                                                            <option value="8th">8th</option>
+                                                            <option value="9th">9th</option>
+                                                            <option value="10th">10th</option>
                                                         </select>
-                                                        <label for="grade">Current class</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-6">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="grade" aria-label="Floating label class select" required name="grade">
-                                                            <option value="">Select your class to admit in</option>
-                                                            <option value="1">Prep</option>
-                                                            <option value="2">K.G</option>
-                                                            <option value="3">1st</option>
-                                                            <option value="2">2nd</option>
-                                                            <option value="3">3rd</option>
-                                                            <option value="4">4th</option>
-                                                            <option value="5">5th</option>
-                                                            <option value="6">6th</option>
-                                                            <option value="7">7th</option>
-                                                            <option value="8">8th</option>
-                                                            <option value="9">9th</option>
-                                                            <option value="10">10th</option>
+                                                    <div class="input-group">
+                                                        <label for="new_class" class="input-group-text">New Class</label>
+                                                        <select required name=new_class id=new_class class="form-select">
+                                                            <option value="">Select your new class</option>
+                                                            <option value="Prep">Prep</option>
+                                                            <option value="K.G">K.G</option>
+                                                            <option value="1st">1st</option>
+                                                            <option value="2nd">2nd</option>
+                                                            <option value="3rd">3rd</option>
+                                                            <option value="4th">4th</option>
+                                                            <option value="5th">5th</option>
+                                                            <option value="6th">6th</option>
+                                                            <option value="7th">7th</option>
+                                                            <option value="8th">8th</option>
+                                                            <option value="9th">9th</option>
+                                                            <option value="10th">10th</option>
                                                         </select>
-                                                        <label for="grade">Admiting class</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-md-6">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="gender" aria-label="Floating label class select" required name="gender">
-                                                            <option value="">Select your gender</option>
-                                                            <option value="male">Male</option>
-                                                            <option value="female">Female</option>
+                                                    <div class="input-group">
+                                                        <label for="test_marks" class="input-group-text">Test Marks</label>
+                                                        <input type="text" pattern="[0-9]{2}" id=test_marks name=test_marks placeholder="Enter test marks here" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="input-group">
+                                                        <label for="school" class="input-group-text">School Name</label>
+                                                        <select required name=school id=school class="form-select">
+                                                            <option value="">Select your school</option>
+                                                            <option value="Tatara Public High School">Tatara Public High School</option>
+                                                            <option value="Shinwari Public School">Shinwari Public School</option>
+                                                            <option value="Shinwari Model School">Shinwari Model School</option>
+                                                            <option value="Hira Public High School">Hira Public High School</option>
+                                                            <option value="Muslim Public High School">Muslim Public High School</option>
+                                                            <option value="Iqra Islamic Education System">Iqra Islamic Education System</option>
+                                                            <option value="Khushal Public High School">Khushal Public High School</option>
+                                                            <option value="Iqra Public High School">Iqra Public High School</option>
+                                                            <option value="Muhammad Public High School">Muhammad Public High School</option>
+                                                            <option value="Usmania Public High School">Usmania Public High School</option>
+                                                            <option value="Landi Kotal Public High School">Landi Kotal Public High School</option>
+                                                            <option value="New Shinwari Iqra Islamic Education Sytem">New Shinwari Iqra Islamic Education Sytem</option>
+                                                            <option value="New Shinwari Public High School">New Shinwari Public High School</option>
+                                                            <option value="New Tatara Public High School">New Tatara Public High School</option>
                                                         </select>
-                                                        <label for="gender">Gender</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 text-center">
@@ -253,15 +289,15 @@
                             <form action="#" class="needs-validation" novalidate>
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control bg-transparent" required id="username" name="username" placeholder="name@example.com">
-                                    <label for="username">Your name</label>
+                                    <label class="form-label" for="username">Your name</label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input type="email" class="form-control bg-transparent" required name="email" id="email" placeholder="name@example.com">
-                                    <label for="email">Email address</label>
+                                    <label class="form-label" for="email">Email address</label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <textarea class="form-control bg-transparent" placeholder="Leave your comments here" id="comments" name="comments" required></textarea>
-                                    <label for="comments">Leave a comment</label>
+                                    <label class="form-label" for="comments">Leave a comment</label>
                                 </div>
                                 <input type="submit" class="btn btn-success btn-sm" value="Send">
                             </form>
@@ -276,7 +312,6 @@
     <script src="javascript/script.js"></script>
     <script src="javascript/admissions.json"></script>
     <script src="javascript/admissions.js"></script>
-
 </body>
 
 </html>
