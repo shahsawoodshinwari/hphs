@@ -1,17 +1,351 @@
 results = [
+{
+    "year": "Annual Examination 2022 Results",
+    "classes":
     {
-        "year": "Annual Examination 2022",
-        "classes": {
-            "Prep": {
-                "1st": "images/default.jpg",
-                "2nd": "images/default.jpg",
-                "3rd": "images/default.jpg",
-            },
-            "K.G": {
-                "1st": "images/default.jpg",
-                "2nd": "images/default.jpg",
-                "3rd": "images/default.jpg",
-            }
-        }
+        "Prep": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "K.G": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "7th": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood Hamzavi",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "8th": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }]
     }
-]
+},
+{
+    "year": "Annual Examination 2022 Results",
+    "classes":
+    {
+        "Prep": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "K.G": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "7th": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood Hamzavi",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "8th": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }]
+    }
+},
+{
+    "year": "Annual Examination 2022 Results",
+    "classes":
+    {
+        "Prep": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "K.G": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "7th": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood Hamzavi",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "8th": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }]
+    }
+},
+{
+    "year": "Annual Examination 2022 Results",
+    "classes":
+    {
+        "Prep": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "K.G": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "7th": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood Hamzavi",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "8th": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }]
+    }
+},
+{
+    "year": "Annual Examination 2022 Results",
+    "classes":
+    {
+        "Prep": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "K.G": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "7th": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood Hamzavi",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }],
+        "8th": [
+        {
+            "position": "1st",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Sawood",
+            "image": "images/default.jpg"
+        }]
+    }
+}]
