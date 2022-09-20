@@ -3,7 +3,7 @@ function create_card(title, images) {
     images.forEach(image => {
         cols += `<div class="col"><a href="${image}"><img class="img-fluid rounded" src="${image}" alt="..."></a></div>`;
     })
-    const card = `<div class="col-12"><div class="card"><div class="card-header">${ title }</div><div class="card-body"><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-1 align-items-center">${cols}</div></div></div></div>`
+    const card = `<div class="col-12 arise"><div class="card"><div class="card-header">${ title }</div><div class="card-body"><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-1 align-items-center">${cols}</div></div></div></div>`
 
     return card;
 } // create card
@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     f().then(() => {
         const target = document.querySelector('#events');
-        target.innerHTML = e;
+        setTimeout(() => {
+            target.innerHTML = e;
+        }, 2500);
     })
 })

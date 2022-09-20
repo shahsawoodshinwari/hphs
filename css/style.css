@@ -111,3 +111,18 @@ a[href="index.html"].text-decoration-none.text-dark {
         opacity: 1
     }
 }
+
+.arise {
+    animation-name: arise;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes arise {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

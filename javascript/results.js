@@ -20,7 +20,7 @@ function createResultCard(obj) {
     for (var i = 0; i < keys.length; i++) {
         grades += createClassResultCard(keys[i], obj.classes[keys[i]]);
     }
-    return `<div class="col-12"><div class="card" style="border-color:var(--bs-orange);"><div class="card-header text-center" style="border-color:var(--bs-orange);">${obj.year}</div><div class="card-body p-1"><div class="row g-2">${grades}</div></div></div></div>`;
+    return `<div class="col-12 arise"><div class="card" style="border-color:var(--bs-orange);"><div class="card-header text-center" style="border-color:var(--bs-orange);">${obj.year}</div><div class="card-body p-1"><div class="row g-2">${grades}</div></div></div></div>`;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     f().then(() => {
         const target = document.getElementById('result');
-        target.innerHTML = html;
+        setTimeout(() => {
+            target.innerHTML = html;
+        }, 2500);
     })
 });

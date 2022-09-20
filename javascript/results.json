@@ -36,4 +36,43 @@ results = [
             "image": "images/2019/shahzaib.jpg"
         }]
     }
-}]
+},
+{
+    "year": "Annual Examination 2021 Results",
+    "classes":
+    {
+        "Prep": [
+        {
+            "position": "1st",
+            "name": "Shah Zaib",
+            "image": "images/2019/shahzaib.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/2019/shahsawood.png"
+        },
+        {
+            "position": "3rd",
+            "name": "Suffay Khan",
+            "image": "images/2019/suffyan.jpg"
+        }],
+        "K.G": [
+        {
+            "position": "1st",
+            "name": "Suffay Khan",
+            "image": "images/2019/suffyan.jpg"
+        },
+        {
+            "position": "2nd",
+            "name": "Shah Sawood",
+            "image": "images/2019/shahsawood.png"
+        },
+        {
+            "position": "3rd",
+            "name": "Shah Zaib",
+            "image": "images/2019/shahzaib.jpg"
+        }]
+    }
+}
+]
