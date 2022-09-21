@@ -2,6 +2,24 @@
     --bs-bg-opacity: 1;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bs-orange);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bs-secondary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-primary);
+
+}
+
 /* overwrite bootstrap focus on button */
 button:focus {
     box-shadow: none !important;
@@ -107,6 +125,7 @@ a[href="index.html"].text-decoration-none.text-dark {
     from {
         opacity: .2
     }
+
     to {
         opacity: 1
     }
@@ -122,7 +141,20 @@ a[href="index.html"].text-decoration-none.text-dark {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .row-cols-lg-7>* {
+        flex: 0 0 auto;
+        width: calc(100% / 7);
+    }
+
+    .row-cols-lg-8>* {
+        flex: 0 0 auto;
+        width: calc(100% / 8);
     }
 }
