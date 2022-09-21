@@ -1,0 +1,77 @@
+alumni = [
+{
+    "batch": "The 2019 Batch",
+    "students": [
+    {
+        "name": "Shah Sawood",
+        "image": "images/2019/shahsawood.png"
+    },
+    {
+        "name": "Zeeshan Khan",
+        "image": "images/2019/zeeshan.jpeg"
+    },
+    {
+        "name": "Tawab Khan",
+        "image": "images/2019/tawab.jpg"
+    },
+    {
+        "name": "Shah Zaib",
+        "image": "images/2019/shahzaib.jpg"
+    },
+    {
+        "name": "Nisar Ahamd",
+        "image": "images/2019/nisar.jpg"
+    },
+    {
+        "name": "Shafi Ullah",
+        "image": "images/2019/shafiullah.jpg"
+    },
+    {
+        "name": "Anees Khan",
+        "image": "images/2019/anees.jpg"
+    },
+    {
+        "name": "Fawad Khan",
+        "image": "images/2019/fawad.jpeg"
+    },
+    {
+        "name": "Irshad Khan",
+        "image": "images/2019/irshad.jpeg"
+    },
+    {
+        "name": "Jalal Khan",
+        "image": "images/2019/jalal.jpg"
+    },
+    {
+        "name": "Mudassir",
+        "image": "images/2019/mudassir.jpeg"
+    },
+    {
+        "name": "Muhammad Ali",
+        "image": "images/2019/muhammadali.jpg"
+    },
+    {
+        "name": "Salman Khan",
+        "image": "images/2019/salman.jpeg"
+    },
+    {
+        "name": "Shah Hussain",
+        "image": "images/2019/shah hussain.jpg"
+    },
+    {
+        "name": "Suffyan Khan",
+        "image": "images/2019/suffyan.jpg"
+    },
+    {
+        "name": "Suleiman Khan",
+        "image": "images/2019/suleiman.jpeg"
+    },
+    {
+        "name": "Umar Ayaz",
+        "image": "images/2019/umarayaz.jpeg"
+    },
+    {
+        "name": "Shah Fahad",
+        "image": "images/2019/shahfahad.jpeg"
+    }]
+}]
