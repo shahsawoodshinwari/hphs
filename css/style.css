@@ -112,22 +112,24 @@ textarea[name="comments"] {
     top: 40% !important
 }
 
-a[href="index.html"].text-decoration-none.text-dark {
-    animation-name: view;
-    animation-duration: 2s;
-    animation-direction: alternate-reverse;
+.typing {
+    white-space: nowrap;
+    overflow: hidden;
+    animation-name: typing;
+    animation-duration: 3s;
     animation-delay: 1s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: steps(24);
+    animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
 }
 
-@keyframes view {
+@keyframes typing {
     from {
-        opacity: .2
+        width: 0ch;
     }
 
     to {
-        opacity: 1
+        width: 24ch;
     }
 }
 
