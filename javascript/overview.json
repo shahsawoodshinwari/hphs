@@ -1,0 +1,46 @@
+latest_news = [
+{
+    "title": "Science Lab",
+    "sub_title": "Chemicals",
+    "image": "science-lab-chemicals.jpg",
+    "description": "The definition of a science laboratory is a special facility where experiments are done and typically contains equipment, beakers, burners and other tools necessary to complete experiments.",
+    "links": [
+    {
+        "text": "Card Link",
+        "href": "#"
+    },
+    {
+        "text": "Another Link",
+        "href": "#"
+    }]
+},
+{
+    "title": "Classroom",
+    "sub_title": "Questionnaire",
+    "image": "classroom.jpeg",
+    "description": "Classroom Questionnaire allows the researcher to understand the factors that impact a class, that may be the instructor, the students, the environment or even the curriculum. It's also useful for distance learning. For example, an institution wants to understand the student's feedback regarding a particular class.",
+    "links": [
+    {
+        "href": "#",
+        "text": "Join"
+    },
+    {
+        "text": "Visit All Classrooms",
+        "href": "#"
+    }]
+},
+{
+    "title": "National Tour",
+    "sub_title": "Lahore",
+    "image": "tour.jpeg",
+    "description": "A study tour helps students appreciate their field of study more and it really helps them better realize the interaction between their chosen fields of study to the rest of the world. Study tours help students open themselves to many possibilities that are not just contained in one geographical location or culture.",
+    "links": [
+    {
+        "text": "Photos",
+        "href": "#"
+    },
+    {
+        "text": "Future Tours",
+        "href": "#"
+    }]
+}]
