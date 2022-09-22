@@ -9,7 +9,7 @@ function createNewsCard(news) {
         card_links += createNewsCardLink(link);
     });
 
-    return `<div class="col-12 col-md-6 col-lg-4"><div class="card h-100 border shadow" style="--bs-border-color: var(--bs-orange)!important;"><img src="${root}${news.image}" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">${news.title}</h5><h6 class="card-subtitle mb-2 text-muted">${news.sub_title}</h6><p class="card-text">${news.description}</p>${card_links}</div></div></div>`
+    return `<div class="col-12 arise col-md-6 col-lg-4"><div class="card h-100 border shadow" style="--bs-border-color: var(--bs-orange)!important;"><img src="${root}${news.image}" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">${news.title}</h5><h6 class="card-subtitle mb-2 text-muted">${news.sub_title}</h6><p class="card-text">${news.description}</p>${card_links}</div></div></div>`
 }
 document.addEventListener('DOMContentLoaded', () => {
     e = ''
@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     f().then(() => {
-        document.querySelector('#spinner').insertAdjacentHTML('afterend', e);
+        target = document.querySelector('#spinner');
+        target.insertAdjacentHTML('afterend', e);
+        target.remove();
+
     })
 });
