@@ -48,7 +48,7 @@ function load_grades(e) {
     classes.forEach(obj => {
         e.target.innerHTML += `<option value="${obj.grade}">${obj.grade}</option>`;
     })
-} 
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     try {
@@ -66,13 +66,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const parent = document.querySelector('#nav-faqs-tab');
     parent.addEventListener('click', () => {
-        questions.forEach(obj => {
-            const id = parent.dataset.bsTarget;
-            const accordionFlush = document.querySelector(id).querySelector('.accordion-flush');
-            accordionFlush.innerHTML += create_accordion_item(obj.id, obj.question, obj.answer);
+        const id = parent.dataset.bsTarget;
+        const accordionFlush = document.querySelector(id).querySelector('.accordion-flush');
+        html = '';
+        async function f() {
+            questions.forEach(obj => {
+                html += create_accordion_item(obj.id, obj.question, obj.answer);
+            });
+        }
+
+        f().then(() => {
+            accordionFlush.innerHTML = html;
         });
     }, { once: true });
 
-    document.querySelector("#new_class").addEventListener('focus', load_grades, {once:true});
-    document.querySelector("#current_class").addEventListener('focus', load_grades, {once:true});
+    document.querySelector("#new_class").addEventListener('focus', load_grades, { once: true });
+    document.querySelector("#current_class").addEventListener('focus', load_grades, { once: true });
 });
