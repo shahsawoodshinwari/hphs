@@ -32,8 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     f().then(() => {
         const target = document.getElementById('result');
-        setTimeout(() => {
-            target.innerHTML = html;
-        }, 2500);
+        target.innerHTML = html;
     })
 });
