@@ -11,7 +11,8 @@ function sendAdmissionForm(e) {
     new_class = form.querySelector('#new_class').value;
     test_marks = form.querySelector('#test_marks').value;
     school = form.querySelector('#school').value;
-    bodyHTML = `<ul><li>first name: ${first_name}</li><li>last name: ${last_name}</li><li>father name: ${father_name}</li><li>phone number: ${phone_number}</li><li>email: ${email}</li><li>date of birth: ${date_of_birth}</li><li>current class: ${current_class}</li><li>new class: ${new_class}</li><li>test marks: ${test_marks}</li><li>school: ${school}</li></ul>`;
+    address = form.querySelector('#address').value;
+    bodyHTML = `<ul><li>first name: ${first_name}</li><li>last name: ${last_name}</li><li>father name: ${father_name}</li><li>phone number: ${phone_number}</li><li>email: ${email}</li><li>date of birth: ${date_of_birth}</li><li>current class: ${current_class}</li><li>new class: ${new_class}</li><li>Address: ${address}</li><li>test marks: ${test_marks}</li><li>school: ${school}</li></ul>`;
     key = "047559F4F417EA2B3399709C81F1D8239D6D41BDDECC661AA5020D861730341426BE42E3CF775B04BC317344F3112A5E"
     url = `https://api.elasticemail.com/v2/email/send?apikey=${key}&subject=${first_name} ${last_name} applied onlinee&from=shahsawooddelta446@gmail.com&msgTo=shahsawood@lastwavetechnology.com&bodyHTML=${bodyHTML}`
     console.log(url)
@@ -42,14 +43,36 @@ function create_accordion_item(qNo, question, answer) {
     </div>`
 }
 
+function load_grades(e) {
+    console.log(e.target);
+    classes.forEach(obj => {
+        e.target.innerHTML += `<option value="${obj.grade}">${obj.grade}</option>`;
+    })
+} 
+
 document.addEventListener('DOMContentLoaded', () => {
     try {
         document.forms[0].addEventListener('submit', sendAdmissionForm);
     } catch (e) {
-        // do nothing
+        console.log(e);
     }
-    const parent = document.querySelector('#faqsAccordionFlush');
-    questions.forEach(obj => {
-        parent.innerHTML += create_accordion_item(obj.id, obj.question, obj.answer)
-    });
+    const t = document.querySelector('#school');
+    t.addEventListener('click', () => {
+        // load schools
+        schools.forEach(school => {
+            t.innerHTML += `<option value="${school.name}">${school.name}</option>`;
+        });
+    }, { once: true });
+
+    const parent = document.querySelector('#nav-faqs-tab');
+    parent.addEventListener('click', () => {
+        questions.forEach(obj => {
+            const id = parent.dataset.bsTarget;
+            const accordionFlush = document.querySelector(id).querySelector('.accordion-flush');
+            accordionFlush.innerHTML += create_accordion_item(obj.id, obj.question, obj.answer);
+        });
+    }, { once: true });
+
+    document.querySelector("#new_class").addEventListener('focus', load_grades, {once:true});
+    document.querySelector("#current_class").addEventListener('focus', load_grades, {once:true});
 });
