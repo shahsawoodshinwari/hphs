@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // statement
     }
     document.querySelector('nav.navbar').innerHTML = create_navbar();
-    document.querySelectorAll('[data-nav]').forEach(function(element) {
+    document.querySelectorAll('.navbar [data-nav]').forEach(function(element) {
         if (element.innerText.toLowerCase() in pages)
             element.setAttribute('href', pages[element.innerText.toLowerCase()]);
         else
