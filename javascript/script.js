@@ -7,13 +7,51 @@ pages = {
     'overview': 'overview.html',
     'results': 'results.html'
 }
+function create_navbar() {
+    return `<div class="container-fluid">
+            <a class="navbar-brand" data-nav="yes">
+                <img src="images/logo.png" alt="logo" class="rounded-circle" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="d-none d-lg-block fs-4 typing">Hamza Public High School</div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" data-nav="yes">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-nav="yes">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-nav="yes">Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-nav="yes">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-nav="yes">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-nav="yes">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-nav="yes">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>`;
+}
 document.addEventListener('DOMContentLoaded', function() {
     try {
         document.querySelector('footer form').addEventListener('submit', sendFeedback);
     } catch (e) {
         // statement
     }
-
+    document.querySelector('nav.navbar').innerHTML = create_navbar();
     document.querySelectorAll('[data-nav]').forEach(function(element) {
         if (element.innerText.toLowerCase() in pages)
             element.setAttribute('href', pages[element.innerText.toLowerCase()]);
