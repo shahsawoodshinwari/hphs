@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     f().then(() => {
         const target = document.querySelector('#events');
-        setTimeout(() => {
-            target.innerHTML = e;
-        }, 2500);
+        target.innerHTML = e;
     })
 })
