@@ -1,17 +1,98 @@
 questions = [
-    {
-        "id": 1,
-        "question": "Accordion Item #1",
-        "answer": "This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow."
-    },
-    {
-        "id": 2,
-        "question": "Accordion Item #2",
-        "answer": "This is the second item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow."
-    },
-    {
-        "id": 3,
-        "question": "Accordion Item #3",
-        "answer": "This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow."
-    }
-]
+{
+    "id": 1,
+    "question": "Accordion Item #1",
+    "answer": "This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow."
+},
+{
+    "id": 2,
+    "question": "Accordion Item #2",
+    "answer": "This is the second item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow."
+},
+{
+    "id": 3,
+    "question": "Accordion Item #3",
+    "answer": "This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow."
+}]
+
+schools = [
+{
+    "name": "Tatara Public High School"
+},
+{
+    "name": "Shinwari Public School"
+},
+{
+    "name": "Shinwari Model School"
+},
+{
+    "name": "Hira Public High School"
+},
+{
+    "name": "Muslim Public High School"
+},
+{
+    "name": "Iqra Islamic Education System"
+},
+{
+    "name": "Khushal Public High School"
+},
+{
+    "name": "Iqra Public High School"
+},
+{
+    "name": "Muhammad Public High School"
+},
+{
+    "name": "Usmania Public High School"
+},
+{
+    "name": "Landi Kotal Public High School"
+},
+{
+    "name": "New Shinwari Iqra Islamic Education System"
+},
+{
+    "name": "New Shinwari Public High School"
+},
+{
+    "name": "New Tatara Public High School"
+}]
+
+classes = [
+{
+    "grade": "Prep"
+},
+{
+    "grade": "K.G"
+},
+{
+    "grade": "1st"
+},
+{
+    "grade": "2nd"
+},
+{
+    "grade": "3rd"
+},
+{
+    "grade": "4th"
+},
+{
+    "grade": "5th"
+},
+{
+    "grade": "6th"
+},
+{
+    "grade": "7th"
+},
+{
+    "grade": "8th"
+},
+{
+    "grade": "9th"
+},
+{
+    "grade": "10th"
+}]
