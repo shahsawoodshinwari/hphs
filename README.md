@@ -11,3 +11,12 @@ Gagra Road, Landi Kotal, Khyber Agency, Khyber Pakhtunkhwa, Pakistan
 * [facebook](https://hamzapublichighschool)
 * [messenger](https://m.me/hamzapublichighschool)
 * [address](https://goo.gl/maps/SDPeHyfVoLfdwp2F6)
+
+### Important Links
+1. [Home](index.html)
+2. [Overview](overview.html)
+3. [Alumni](alumni.html)
+4. [Admissions](admissions.html)
+5. [Events](events.html)
+6. [Results](results.html)
+7. [About](about.html)
