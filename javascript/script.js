@@ -147,7 +147,10 @@ function create_footer() {
 }
 document.addEventListener('DOMContentLoaded', function() {
     try {
-        document.querySelector('nav.navbar').innerHTML = create_navbar();
+        const nav = document.querySelectorAll('body nav')[0];
+        nav.classList.add("navbar", "navbar-expand-sm", "sticky-top", "shadow");
+        nav.style.backgroundColor = 'var(--bs-orange)';
+        nav.innerHTML = create_navbar();
         document.querySelector('footer').innerHTML = create_footer();
         document.querySelector('footer form').addEventListener('submit', sendFeedback);
     } catch (e) {
