@@ -145,12 +145,26 @@ function create_footer() {
             </div>
         </div>`;
 }
+
+function create_toast() {
+    return `<div class="toast-container position-fixed end-0 p-3">
+        <div id="thanksToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Thanks for your feedback!
+            </div>
+        </div>
+    </div>`;
+}
 document.addEventListener('DOMContentLoaded', function() {
     try {
         const nav = document.querySelectorAll('body nav')[0];
         nav.classList.add("navbar", "navbar-expand-sm", "sticky-top", "shadow");
         nav.style.backgroundColor = 'var(--bs-orange)';
         nav.innerHTML = create_navbar();
+        nav.insertAdjacentHTML('afterend', create_toast());
         document.querySelector('footer').innerHTML = create_footer();
         document.querySelector('footer form').addEventListener('submit', sendFeedback);
     } catch (e) {

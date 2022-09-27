@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     f().then(() => {
         const target = document.querySelector('#batch-gallary');
-        setTimeout(() => {
-            target.innerHTML = html;
-        }, 1500);
+        target.innerHTML = html;
     })
 });
