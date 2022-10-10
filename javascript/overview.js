@@ -20,10 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     f().then(() => {
-        setTimeout(() => {
-            target = document.querySelector('#spinner');
-            target.insertAdjacentHTML('afterend', e);
-            target.remove();
-        }, 1000);
+        target = document.querySelector('#spinner');
+        target.insertAdjacentHTML('afterend', e);
+        target.remove();
     })
 });
